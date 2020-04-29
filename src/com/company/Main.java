@@ -26,6 +26,7 @@ public class Main {
         Main coin =new Main();
         String name=coin.getname(amount);
         System.out.println(name);
+        System.out.println("111");
 
     }
 
