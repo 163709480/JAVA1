@@ -1,5 +1,12 @@
 ﻿# JAVA1
-笔记
+   `JAVA` 
+- [x] this
+- [x]
+- [x] 
+- [ ] 
+- [ ] 
+- [ ]<br>
+*笔记
 containsKey:判定是否包含指定键名
 <cd> listcd  
   (CD cd)
@@ -36,4 +43,5 @@ Overide
  *   A. this(..)调用也必须是构造方法的第一个语句，唯一个。
  *   B.super和this两种构造调用不能同时使用。
  
-   *java语言是单继承的
+   
+   
