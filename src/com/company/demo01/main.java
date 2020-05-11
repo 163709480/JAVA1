@@ -1,5 +1,7 @@
 package com.company.demo01;
 
+import org.w3c.dom.ls.LSOutput;
+
 /*
 *
 * 1.类与类之间是单继承的。直接父类只有一个。
@@ -9,4 +11,8 @@ package com.company.demo01;
 *
 * */
 public class main {
+
+//    11
+
+
 }
