@@ -10,7 +10,7 @@ public class demomain {
 //        Mouse mouse =new Mouse();
         //首先进行向上转型
         USB usb =new Mouse();//多态写法
-        //参数是usb类型
+        //参数是usb类型 我正好传递进去就是USB鼠标
         com.useDevice(usb);
 
         //创建一个USB键盘
