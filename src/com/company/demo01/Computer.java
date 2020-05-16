@@ -14,7 +14,7 @@ public class Computer {
 
         if(usb instanceof  Mouse){
             Mouse mouse=(Mouse) usb;
-            mouse.close();
+            mouse.click();
         }else  if(usb instanceof  Keyboard){
             Keyboard keyboard=(Keyboard)usb;
             keyboard.type();
