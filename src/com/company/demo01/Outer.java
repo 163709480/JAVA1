@@ -33,6 +33,7 @@ public class Outer {
         }
         Inner inner= new Inner();
         inner.methodInner();
+        System.out.println("222");
 
     }
 

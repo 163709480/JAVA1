@@ -13,13 +13,14 @@ package com.company.demo01;
 * */
 
 public class Myout {
-    public void methodOuter(){
-         int num=10;//所在方法的局部变量
+    public void methodOuter() {
+        int num = 10;//所在方法的局部变量
 
-        class MyInner{
-            public void methodInner(){
-                System.out.println(num);
+        class MyInner {
+            public void methodInner() {
+                System.out.println(num+"11");
             }
         }
+
     }
 }
