@@ -18,14 +18,23 @@ public class Demomain {
         };
         hero.setSkill(skill);
         //进一步简化,同时使用匿名内部类和匿名对象
-        hero.setSkill(new Skill() {
-            @Override
-            public void use() {
-                System.out.println("biu pia biu  pia");
-            }
-        });
+//        hero.setSkill(new Skill() {
+//            @Override
+//            public void use() {
+//                System.out.println("biu pia biu  pia");
+//            }
+//        });
 
         hero.attack();
+
+
+        System.out.println("===========================");
+
+
+        name na= new name();
+        na.setName("dong");
+        na.setIn33t(new in());
+        na.attack();
 
     }
 }
