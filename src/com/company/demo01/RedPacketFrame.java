@@ -21,7 +21,7 @@ public abstract class RedPacketFrame extends JFrame {
 
     private static final long serialVersionUID = 1L;
     
-    private static final String DIR = "day11-code\\pic";
+    private static final String DIR = "C:\\Users\\qw163\\Desktop\\11.【final、权限、内部类】\\02_代码\\day11-code\\pic";
 
     private ArrayList<Integer> moneyList = null;
 
