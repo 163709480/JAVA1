@@ -48,7 +48,7 @@ public class demo03 {
     *           public Date parse(String source) throws ParseException
     *           parse方法声明了一个异常叫ParseException
     *           如果字符串和构造方法的模式不一样，那么程序就会抛出此异常
-    *           调用一个抛出了异常的方法，就必须的处理这个异常，要么throw继续抛出这个异样,要么try catch自己处理
+    *           调用一个抛出了异常的方法，就必须的处理这个异常，要么throw继续抛出这个异常,要么try catch自己处理
     *
     * */
 
