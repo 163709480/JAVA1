@@ -77,6 +77,7 @@ public class demo01iterator {
         * */
 
 
+
         while (it.hasNext()){
             String a = it.next();
             System.out.println(a);
