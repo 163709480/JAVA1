@@ -61,7 +61,7 @@ public class demo01 {
         Calendar c= Calendar.getInstance();
 
         //把年增加2年
-        c.add(Calendar.YEAR,2);
+        c.add(Calendar.YEAR,  2);
         //把月减少两月
         c.add(Calendar.MONTH,-3);
         //减少两天
