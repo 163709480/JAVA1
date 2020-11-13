@@ -32,6 +32,7 @@ public class Demo02KeySet {
         Iterator<String> it = set.iterator();
         while (it.hasNext()){
             String key=it.next();
+
 //            3.通过Map集合中的方法get(key)，通过key找到value
             Integer value = map.get(key);
             System.out.println(key+"="+value);
@@ -50,7 +51,13 @@ public class Demo02KeySet {
 //        boolean B2 = map.containsKey("dom");
 //        System.out.println("b2"+B2);
 
-
+            /*
+            *
+            * Map.Entry<K,V>在Mao接口中有一个内部接口Entry
+            * 作用：当Map集合一创建，南无就会在Map集合中创建一个Entry对象，用来记录键与值(键值对对象，键与值的映射关系)
+            *
+            *
+            * */
 
 
 
