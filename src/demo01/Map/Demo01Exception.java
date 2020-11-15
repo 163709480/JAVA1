@@ -7,7 +7,7 @@ package demo01.Map;
 *           RuntimeException:运行期异常,java程序运行过程中出现的问题
 *           异常就相当于程序得了一个小毛病，把异常处理掉，程序可以继续执行
 *       Error:错误
-*           错误就相当于程序得了一个无法至于得毛病(非典，艾滋)必须修改源代码，程序才能继续执行
+*           错误就相当于程序得了一个无法治愈得毛病必须修改源代码，程序才能继续执行
 * */
 
 import java.text.ParseException;
@@ -35,13 +35,13 @@ public class Demo01Exception {
 //
 //        }catch (Exception e){
 //            //异常的处理逻辑
-//            System.out.println(e);
+//            Sy stem.out.println(e);
 //
 //        }
         /*
         * Error:错误
         * OutOfMemoryError: Java heap space
-        * 内存溢出的错误，数组太大,超出了给jvm分配的内存
+        * 内存溢出的错误，创建数组太大,超出了给jvm分配的内存
         *
         * */
 
