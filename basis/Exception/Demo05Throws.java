@@ -24,26 +24,32 @@ import java.io.IOException;
 *               要么继续使用throws声明抛出,交给方法的调用者处理,最终交给JVM
 *               要么try...catch自己处理异常
 *
-*
-* */
-public class Demo05Throws {
-    /*
-    * FileNotFoundException extends IOException extends Exception
-    * 如果抛出的多个异常有父子类关系,南无直接声明父类异常即可
+*系,南无直接声明父类异常即可
     * */
 
 //    public static void main(String[] args) throws FileNotFoundException,IOException {
 //    public static void main(String[] args) throws IOException {
-public static void main(String[] args) throws Exception {
-    readFile("c:\\a.t");
-    }
-    /*
-    * 定义一个方法,对传递的文件路径进行合法性判断
-    * 如果路径不是"c:\\a.txt",那么我们就抛出文件找不到异常对象,告知方法的调用者
-    *注意
-    *   FileNotFoundException是编译异常,抛出了编译异常,就必须处理这个异常
-    *   可以使用throws继续声明抛出FileNotFoundException这个异常对象,让方法的调用者处理
-    * */
+
+
+    public class Demo05Throws {
+        public static void main(String[] args) throws Exception {
+        }
+
+        readFile("c:\\a.t") {
+
+        }
+
+        /*
+        * FileNotFoundException extends IOException extends Exception
+        * 如果抛出的多个异常有父子类关
+        }
+        /*
+        * 定义一个方法,对传递的文件路径进行合法性判断
+        * 如果路径不是"c:\\a.txt",那么我们就抛出文件找不到异常对象,告知方法的调用者
+        *注意
+        *   FileNotFoundException是编译异常,抛出了编译异常,就必须处理这个异常
+        *   可以使用throws继续声明抛出FileNotFoundException这个异常对象,让方法的调用者处理
+        * */
     public static void readFile(String fileName)throws FileNotFoundException,IOException
     {
         if(!fileName.equals("c:\\a.txt")){
