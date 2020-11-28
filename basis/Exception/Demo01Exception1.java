@@ -39,22 +39,23 @@ public class Demo01Exception1 {
 //        System.out.println("后续代码");
 
 
-//        2.多个异常一次捕获，多次处理
-//        try{
-//            int[] arr={1,2,3};
-//           // System.out.println(arr[3]);//
-//            List<Integer> list = List.of(1, 2, 3);
-//            System.out.println(list.get(3));//ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-//
-//
-//        }catch (ArrayIndexOutOfBoundsException e){//ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
-//            System.out.println(e);
-//
-//
-//        }catch (IndexOutOfBoundsException e){
-//        System.out.println(e);
-//
-//    }
+        2.多个异常一次捕获，多次处理
+        try{
+            int[] arr={1,2,3};
+           // System.out.println(arr[3]);//
+            List<Integer> list = List.of(1, 2, 3);
+            System.out.println(list.get(3));//ArrayIndexOutOfBo
+            // undsException: Index 3 out of bounds for length 3
+
+
+        }catch (ArrayIndexOutOfBoundsException e){//ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+            System.out.println(e);
+
+
+        }catch (IndexOutOfBoundsException e){
+        System.out.println(e);
+
+    }
     /*
     *   一个try多个catch注意事项:
     *           catch里面定义的异常变量，如果有子父类关系,那么子类的异常变量必须写在上边,否则就会报错
