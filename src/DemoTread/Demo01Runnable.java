@@ -32,14 +32,19 @@ public class Demo01Runnable {
         //4.创建Thread类对象,构造方法中国传递Runnabel接口的实现类对象
         Thread th=new Thread(run);
 
-        th.start();
+        th.start();//设置线程任务和开启线程任务做了分离
 
 
 
+    //main主线程
+        for (int i = 0; i < 20000; i++) {
 
-        for (int i = 0; i < 20; i++) {
-            System.out.println(Thread.currentThread().getName()+i);
-
+            System.out.println(Thread.currentThread().getName()+"main"+i);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
 
         }
