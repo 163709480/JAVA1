@@ -24,13 +24,14 @@ package DemoTread;
 *
 * */
 import Demo05.Tread.Tread;
+import jdk.swing.interop.SwingInterOpUtils;
 
 public class Demo01Runnable {
     public static void main(String[] args) {
         //3创建一个Runable接口的实现类对象
         Runnable run=new Runnable();
         //4.创建Thread类对象,构造方法中国传递Runnabel接口的实现类对象
-        Thread th=new Thread(run);
+        Thread th=new Thread(run);//用来开启新的线程
 
         th.start();//设置线程任务和开启线程任务做了分离
 
@@ -45,6 +46,7 @@ public class Demo01Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+            System.out.println("outpiut");
 
 
         }

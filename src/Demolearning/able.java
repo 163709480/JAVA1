@@ -1,6 +1,6 @@
 package Demolearning;
 
-public class able implements Runnable {
+public class able implements Runnable{
     @Override
     public void run() {
         for (int i = 0; i < 20; i++) {
