@@ -3,8 +3,8 @@ package Demolearning;
 *
 * 实现买票案例
 *
-*
-* */
+RunnableIml
+Demo01Ticket* */
 
 public class RunnableIml implements Runnable {
     //定义一个多线程共享的票源

@@ -1,8 +1,7 @@
-package Demolearning;
+package Demo08.Synchronized;
+
 /*
-*       注意:线程安全问题是不能产生的,我们可以让一个
-*       线程在访问共享数据的时候无论是否失去了cpu的执行权让其他的线程只能等待,
-*       等待当前线程卖完票,其他线程在进行卖票
+*       解决线程安全问题的两种方案，第二种方法使用同步方法
 *
 *
 *
@@ -18,6 +17,7 @@ public class Demo01Ticket {
         *
         *
         * */
+        System.out.println("run"+run);
         Thread to=new Thread(run);
         Thread t1=new Thread(run);
         Thread t2=new Thread(run);

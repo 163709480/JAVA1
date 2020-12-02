@@ -1,4 +1,5 @@
-package Demolearning;
+package Demo07.Synchronized;
+
 /*
 *       注意:线程安全问题是不能产生的,我们可以让一个
 *       线程在访问共享数据的时候无论是否失去了cpu的执行权让其他的线程只能等待,
