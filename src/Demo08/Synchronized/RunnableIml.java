@@ -33,7 +33,7 @@ package Demo08.Synchronized;
 
 public class RunnableIml implements Runnable {
     //定义一个多线程共享的票源
-    private int ticket=100;
+    private static int ticket=100;
     //创建一个锁对象
     Object obj= new Object();
 
@@ -58,7 +58,16 @@ public class RunnableIml implements Runnable {
 
         }
     }
-    public  synchronized void payticket(){
+    /*
+    *
+    * 静态的同步方法
+    * 锁对象是谁
+    * 不能是this
+    * this是创建对象之后产生的,静态方法优先于对象
+    * 静态方法的锁对象是本类的class属性-->class文件对象(反射)
+    *
+    * */
+    public  static  synchronized void payticket(){
         if (ticket > 0) {
             //提高安全问题出现的概率,让程序睡眠
             try {

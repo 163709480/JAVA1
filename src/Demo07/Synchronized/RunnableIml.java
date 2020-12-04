@@ -31,6 +31,7 @@ package Demo07.Synchronized;
  */
 
 public class RunnableIml implements Runnable {
+
     //定义一个多线程共享的票源
     private int ticket=100;
     //创建一个锁对象
