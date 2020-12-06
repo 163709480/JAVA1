@@ -11,7 +11,7 @@ public class customer extends Thread{
     public void run() {
         while (true){
             synchronized (fd){
-                if(fd.flag==true){
+                if(fd.flag==false){
 
                     try {
                         fd.wait();
@@ -24,6 +24,7 @@ public class customer extends Thread{
                 System.out.println("eat food");
                 fd.flag=false;
                 fd.notify();
+                System.out.println("finish eat food");
 
             }
         }

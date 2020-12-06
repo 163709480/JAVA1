@@ -1,7 +1,7 @@
 package DemoThreadlearning;
 
-public class eat extends Thread{
-    public eat(food fd) {
+public class makefood extends Thread{
+    public makefood(food fd) {
         this.fd = fd;
     }
 
@@ -19,7 +19,7 @@ public class eat extends Thread{
                     }
                 }
 
-                System.out.println("add food");
+                System.out.println("add food........");
                 try {
                     Thread.sleep(3000);
                 } catch (InterruptedException e) {
