@@ -20,14 +20,18 @@ package Demo10.WaitAndNotify;
 *
 * */
 
+import java.io.Serializable;
+
 public class Demo01WaitAndNotify {
     public static <obj> void main(String[] args) {
+
         //创建锁对象,保证唯一
         Object obj= new Object();
         //创建一个顾客线程(消费者)
         new Thread(){
             @Override
             public void run() {
+
                while (true){
                    //保证等待和唤醒的线程只能由一个执行,需要使用同步技术
                    synchronized (obj){
