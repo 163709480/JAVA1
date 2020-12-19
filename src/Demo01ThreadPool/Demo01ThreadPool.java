@@ -34,6 +34,7 @@ public class Demo01ThreadPool {
         es.submit(new RunnableImpi());//pool-1-thread-1创建了一个新的线程执行
         es.submit(new RunnableImpi());//pool-1-thread-1创建了一个新的线程执行
 
+
         es.shutdown();
         es.submit(new RunnableImpi());//抛异常,线程池都没有了,就不能获取线程池了
 
