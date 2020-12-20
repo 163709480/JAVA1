@@ -23,8 +23,6 @@ package DemoTread;
 *           创建Thread类对象,调用start方法；用来开启新线程
 *
 * */
-import Demo05.Tread.Tread;
-import jdk.swing.interop.SwingInterOpUtils;
 
 public class Demo01Runnable {
     public static void main(String[] args) {

@@ -1,8 +1,6 @@
 package DemoTread;
 
-import Demo05.Tread.Person;
-
-import java.time.Period;
+//import Demo05.Tread.Person;
 
 //1.创建一个Thread类的子类
 public class MyThread extends  Thread {
